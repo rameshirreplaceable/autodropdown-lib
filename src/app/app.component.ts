@@ -6,5 +6,802 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'autodropdown-lib-app';
+  dropDownData = [
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'Ramesh'
+    },
+    {
+      name: 'enkat',
+    },
+    {
+      name: 'rakesh'
+    },
+    {
+      name: 'ramesh'
+    },
+    {
+      name: 'venkat',
+    },
+    {
+      name: 'rakesh'
+    },
+  ]
+
+  onChangeAutodropdownData(data) {
+    console.log(data);
+  }
 }

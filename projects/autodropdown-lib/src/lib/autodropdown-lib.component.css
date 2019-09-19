@@ -1,0 +1,88 @@
+.pd28 {
+  padding-right: 28px !important;
+}
+.dropdown-list {
+  max-height: 200px;
+  overflow: auto;
+}
+.dropdown-list a.no-data-msg:last-child {
+  display: none;
+}
+.dropdown-list a.no-data-msg:first-child {
+  text-align: center;
+  color: #ff5722 !important;
+  display: block;
+}
+.overflowellipse {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.filtersearch-input {
+  min-height: 30px !important;
+  padding: 5px !important;
+  font-size: 12px;
+}
+.dropdown__menu {
+  padding-bottom: 5px !important;
+  font-size: 1.2rem;
+}
+.dropdown-list p:hover {
+  background: #f2f2f2;
+}
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-list p {
+  margin: 0;
+  padding: 6px 5px;
+  border-bottom: 1px solid transparent;
+  font-weight: 500;
+  font-size: 12px;
+  flex: 1;
+}
+.dropdown-list p.checked {
+  background: #017cad !important;
+  color: #fff !important;
+  border-bottom: 1px solid #0583b6;
+}
+.dropdown-list p.checked span {
+  color: #fff !important;
+}
+
+ul.utility {
+  list-style: none;
+  padding: 0 10px !important;
+}
+ul.utility li {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 10px;
+}
+.corange {
+  color: #e2231a;
+}
+.coblue {
+  color: #017cad;
+}
+/* Scroll Bar */
+.ngx-datatable .datatable-body .datatable-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: none;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(250, 250, 250, 0.1);
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border: 1px solid rgb(255, 255, 255);
+}
+/* Scroll Bar */

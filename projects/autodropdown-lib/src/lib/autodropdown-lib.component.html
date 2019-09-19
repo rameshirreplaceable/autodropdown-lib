@@ -1,0 +1,32 @@
+<div class="form-group dropdown active">
+    <div class="form-group__text select" (click)="openPopup = !openPopup" title="{{finalSelectedValueName}}">
+        <input class="pd28 overflowellipse text-info" type="text" [(ngModel)]="finalSelectedValueName" placeholder="Not Selected">
+        <label *ngIf="raLabel">{{raLabel}}</label>
+    </div>
+    <div class="dropdown__menu" *ngIf="openPopup">
+        <div class="form-group__text" style="margin: 5px 6px;border-bottom: 1px solid #dfdfdf;padding-bottom: 5px;">
+            <input class="filtersearch-input" type="search" (input)="filterTheList($event)" placeholder="Search...">
+        </div>
+        <ul class="utility">
+            <li class="pull-left"><span class="coblue">ITEM: ({{raData.length}}/{{finalSelectedValueList.length}})</span></li>
+            <li *ngIf="!filterValue" class="pull-right">
+                <span [ngClass]="{'icon-sort-amount-desc': !sortOrder,'icon-sort-amount-asc': sortOrder }" (click)="shortOrder()"></span>
+            </li>
+            <li *ngIf="!filterValue" (click)="selectAll()" class="pull-right"><span class="coblue">Select All</span> - </li>
+            <li *ngIf="!filterValue" (click)="clearAll()" class="pull-right"><span class="corange">Clear All</span> - </li>
+        </ul>
+        <div class="dropdown-list" @listAnimations style="margin: 2px 6px;" (scroll)="scrollHandler($event)">
+            <ng-template ngFor let-list let-index="index" [ngForOf]="raData | filterValue:filterValue">
+                <ng-template [ngIf]="index <= displayLength">
+                    <p class="animateMe" 
+                    [ngStyle]="{'order': (sortOrder && list.checked)? 0: 1}"
+                    [ngClass]="{'checked': list.checked}"
+                    (click)="(list.checked = !list.checked);(sortOrder = false);onChangeSelect()">
+                        <span>{{list.name}} {{index}}</span>
+                    </p>
+                </ng-template>
+            </ng-template>
+            <a class="no-data-msg">No Items Found!</a>
+        </div>
+    </div>
+</div>

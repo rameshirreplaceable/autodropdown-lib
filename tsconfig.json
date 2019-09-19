@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "autodropdown-lib": [
+        "dist/autodropdown-lib"
+      ],
+      "autodropdown-lib/*": [
+        "dist/autodropdown-lib/*"
+      ]
+    }
   }
 }

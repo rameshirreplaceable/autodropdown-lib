@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/cui-standard.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -115,6 +116,41 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "autodropdown-lib": {
+      "root": "projects/autodropdown-lib",
+      "sourceRoot": "projects/autodropdown-lib/src",
+      "projectType": "library",
+      "prefix": "ra",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/autodropdown-lib/tsconfig.lib.json",
+            "project": "projects/autodropdown-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/autodropdown-lib/src/test.ts",
+            "tsConfig": "projects/autodropdown-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/autodropdown-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/autodropdown-lib/tsconfig.lib.json",
+              "projects/autodropdown-lib/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]
